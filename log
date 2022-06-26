@@ -1,0 +1,23 @@
+Preparing to copy version 1.7.0
+1) Yes
+2) No
+#? '../i2p.android.base/app/build/outputs/apk/free/release/app-free-release.apk' -> 'fdroid/repo/I2P-1.7.0.apk'
+2022-02-22 17:59:49,556 CRITICAL: Unknown exception found!
+Traceback (most recent call last):
+  File "/usr/bin/fdroid", line 33, in <module>
+    sys.exit(load_entry_point('fdroidserver==2.1b0', 'console_scripts', 'fdroid')())
+  File "/usr/lib/python3/dist-packages/fdroidserver/__main__.py", line 230, in main
+    raise e
+  File "/usr/lib/python3/dist-packages/fdroidserver/__main__.py", line 211, in main
+    mod.main()
+  File "/usr/lib/python3/dist-packages/fdroidserver/update.py", line 2098, in main
+    config = common.read_config(options)
+  File "/usr/lib/python3/dist-packages/fdroidserver/common.py", line 412, in read_config
+    fill_config_defaults(config)
+  File "/usr/lib/python3/dist-packages/fdroidserver/common.py", line 322, in fill_config_defaults
+    if not re.match(r'r[1-9][0-9]*[a-z]?', k):
+  File "/usr/lib/python3.9/re.py", line 191, in match
+    return _compile(pattern, flags).match(string)
+TypeError: expected string or bytes-like object
+tar: fdroid: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors

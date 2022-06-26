@@ -1,0 +1,6 @@
+[submodule "fdroid"]
+	path = fdroid
+	url = https://github.com/eyedeekay/fdroid
+[submodule "fdroid-dev"]
+	path = fdroid-dev
+	url = https://github.com/eyedeekay/fdroid-dev
