@@ -3,9 +3,11 @@ VERSION=$(grep I2P_VERSION ../i2p.android.base/gradle.properties)
 DATE=$(date +%Y%m%d)
 
 cd ../i2p.i2p && \
-    git checkout master; git pull upstream master && \
+    git checkout master; git pull --all && \
     ant distclean mavenLocal
 echo "${VERSION} ${DATE}"
+sleep 20s
+
 cd ../i2p.android.base && \
     git checkout master; git pull origin master
 if [ -f routerjars/local.properties.bak ]; then
