@@ -24,7 +24,7 @@ fi
 
 copy(){
     FDROID="$1"
-    cp -v ../i2p.android.base/app/free/release/app-free-release.apk \
+    cp -v ../i2p.android.base/app/build/outputs/apk/free/release/app-free-release.apk \
         "${FDROID}/repo/I2P-$VERSION.apk"
 }
 

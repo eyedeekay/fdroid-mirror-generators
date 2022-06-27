@@ -15,7 +15,7 @@ if [ -f routerjars/local.properties.bak ]; then
     cp -v routerjars/local.properties routerjars/local.properties.bak
 fi
 echo "i2psrc=${HOME}/Workspace/GIT_WORK/i2p.i2p" > routerjars/local.properties
-./gradlew clean assembleRelease
+./gradlew clean :app:assembleFreeRelease
 if [ -f routerjars/local.properties.bak ]; then
     cp -v routerjars/local.properties.bak routerjars/local.properties
 fi
