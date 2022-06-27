@@ -1,5 +1,5 @@
 #! /usr/bin/env sh
-. ../i2p.android.base/gradle.properties
+eval $(grep I2P_VERSION ../i2p.android.base/gradle.properties)
 DATE=$(date +%Y%m%d)
 
 cd ../i2p.i2p && \

@@ -13,7 +13,7 @@ echo "${RUNDIR}"
 ./build.sh || exit 1
 cd "${RUNDIR}" || exit 1
 DATE=$(date +%Y%m%d)
-./run.sh ${FDROID} "${DATE}" yes || exit 1
+./run.sh "${FDROID}" "${DATE}" yes || exit 1
 cd "${RUNDIR}" || exit 1
-./github.sh ${FDROID} || exit 1
+./github.sh "${FDROID}" || exit 1
 exit 0
